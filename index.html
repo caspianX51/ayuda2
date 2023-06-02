@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="js/app.js"></script>
+    <title>SASIC | Ayuda</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg px-4">
+      <a class="navbar-brand" href="http://201.116.244.220/">
+        <img src="img/logo.png" with="100%" height="50px" alt="Dirección de informática" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fa fa-bars text-white"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="http://201.116.244.220/login.php">SASIC</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link"
+              href="http://201.116.244.220/herramientas_sasic/index.html">Herramientas en línea</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="scrollInicio" class="container container-main">
+      <div class="scrollarrowup d-flex align-items-center justify-content-center bg-black shadow">
+        <a href="#scrollInicio">
+          <span class="fa fa-chevron-up text-white"></span>
+        </a>
+      </div>
+        <div class="mt-5">
+          <h1 class="fw-bold">Soporte técnico | Ayuda</h1>
+          <p class="text-brand text-2xl">
+            Bienvenidos a la sección de ayuda del
+            <strong>SASIC</strong> (Sistema de Ayuda y Soporte en Informática de
+            la Contraloría del Estado), esperamos que sea de mucha utilidad para
+            resolver tu problema.
+          </p>
+        </div>
+
+        <nav id="direct" class="mb-5">
+          <a href="#scrollInternet"><span class="badge bg-warning">Internet</span></a>
+          <a href="#scrollImpresora"><span class="badge bg-info">Impresora</span></a>
+          <a href="#scrollMonitor"><span class="badge bg-primary">Monitor</span></a>
+          <a href="#scrollScanner"><span class="badge bg-danger">Scanner</span></a>
+        </nav>
+      <div data-bs-spy="scroll" data-bs-target="#direct" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="mb-3 mb-lg-5" tabindex="0">
+        <div id="scrollInternet" class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help1"
+              aria-expanded="false"
+              aria-controls="help1"
+            >
+              <span class="circle">1</span>
+              <span class="mx-3 qt">
+                No tengo internet ¿Qué debo de revisar?
+              </span>
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help1">
+            <div class="card card-body">
+              <p>
+                Lo primero que deberás revisar es que el <strong>cable de red</strong> se
+                encuentre <strong>conectado al equipo</strong> y que ese cable que conecta al
+                equipo tambien se encuentre conectado en el otro extremo a la
+                red. Tu cable de red debe verse de esta manera:
+              </p>
+              <div class="text-center mb-3">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="img/1-ethernet.jpg"
+                  alt="cable_ethernet"                  
+                />
+              </div>
+              <p class="mb-0">Y debe estar conectado a la computadora en este espacio:</p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-puertoethernet.jpeg"
+                    alt="Puerto de Ethernet"                  
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-puertocable.jpg"
+                    alt="Puerto con cable conectado"                  
+                  />
+                </div>
+              </div>
+              <p class="mb-0">
+                Tambien debes asegurarte que en el otro extremo se encuentre
+                conectado a un puerto, ya sea una caja o un swtich
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-ethernetpared.jpg"
+                    alt="Caja de Ethernet"                   
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-PuertoSwitch.jpg"
+                    alt="Puerto Switch"                  
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help2"
+              aria-expanded="false"
+              aria-controls="help2"
+            >
+              <span class="circle">2</span>
+              <span class="mx-3 qt"
+                >¿Qué debo revisar si mi PC no enciende?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help2">
+            <div class="card card-body">
+              <p>
+                Si <strong>tu equipo no enciende</strong> lo primero que deberás hacer es
+                asegurarte que es tu CPU y no tu monitor el que está fallando
+              </p>
+              <p>
+                Si tu CPU hace ruido o encienden las luces de enfrente o a los
+                lados, significa que tu equipo está encendido y probablemente
+                sea falla de tu monitor.
+              </p>
+              <p class="mb-0">
+                Una vez verificado que la falla viene de tu equipo y no de tu
+                monitor deberás verificar que esté conectado a la luz
+                adecuadamente. Verificando que el cable de corriente se
+                encuentra bien conectado, así mismo si tu CPU tiene un interruptor
+                asegurarte que esté encendido.
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/2-cablecorriente.png"
+                    alt="Cable de Corriente"                 
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/2-switchcorriente.jpg"
+                    alt="Switch de Corriente"                  
+                  />
+                </div>
+              </div>
+              <p>
+                Si todo se encuentra en orden pero aun así el equipo no enciende
+                es necesario solicitar ayuda a la direccion de informatica a
+                través de un ticket en el SASIC.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="scrollMonitor" class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help3"
+              aria-expanded="false"
+              aria-controls="help3"
+            >
+              <span class="circle">3</span>
+              <span class="mx-3 qt"
+                >¿Qué debo revisar si mi monitor no da imagen?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help3">
+            <div class="card card-body">
+              <p>
+                Si tu monitor no está dando imagen y tu CPU se encuentra
+                encendida debes de verificar que los cables se encuentren
+                conectados correctamente, asegurandose que están introducidos de
+                manera correcta en los puertos indicados
+              </p>
+              <p>
+                1. Inicia con el cable VGA el cual es el encargado de enviar
+                imagen a tu pc.
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/3-cablevga.jpg"
+                    alt="Cable de VGA"                 
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/4dc19a_620f865680504a25bfdc55f9d26825d0.webp"
+                    alt="Puerto VGA"                  
+                  />
+                </div>
+              </div>
+              <div class="text-center">
+                <img
+                  class="img-fluid img-thumbnail"
+                  src="img/3-vgapc.jpeg"
+                  alt="VGA en PC"                  
+                />
+              </div>
+              <p class="mb-0">
+                2. Asegúrate de que el cable de corriente (cable negro) se encuentra
+                conectado de manera correcta.
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/3-cablecorriente.jpeg"
+                    alt="Cable de Corriente"                  
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/3-puertocorriente.jpg"
+                    alt="Puerto de Corriente Monitor"                  
+                  />
+                </div>
+              </div>
+              <p>
+                Si después de revisar las conexiones aún tienes problemas con tu
+                monitor por favor realizar un ticket en el SASIC para recibir
+                apoyo de parte de la Dirección de informática.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2" id="scrollImpresora">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help4"
+              aria-expanded="false"
+              aria-controls="help4"
+            >
+              <span class="circle">4</span>
+              <span class="mx-3 qt"
+                >¿Qué debo revisar si mi impresora no funciona?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help4">
+            <div class="card card-body">
+              <p>
+                En caso de que tu impresora no funcione primero deberas
+                verificar la conexion entre tu PC y tu Impresora.
+              </p>
+              <p>
+                Verifica que tipo de conexion tiene tu impresora, ya que esta
+                puede estar conectada a través de un cable USB o a traves de la
+                red de internet.
+              </p>
+              <p class="mb-0">
+                Si tu impresora utiliza un cable USB como el que se muestra en
+                seguida:
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/4-cableusbA.jpg"
+                    alt="Cable USB de impresora"                  
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/4-impresoraporusb.jpg"
+                    alt="Puerto USB de la impresora"                  
+                  />
+                </div>
+              </div>
+              <p>
+                Verifica que la impresora se encuentre encendida y que el cable
+                se encuentre conectado de forma correcta a la impresora y a tu
+                PC antes de crear un ticket de soporte
+              </p>
+              <p>
+                Si tu impresora utiliza un cable de red Ethernet como el que
+                se muestra en seguida:
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-ethernet.jpg"
+                    alt="Cable Ethernet para impresora"                 
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/4-impresoraethernet.jpeg"
+                    alt="Puerto Ethernet de Impresora"                
+                  />
+                </div>
+              </div>
+              <p class="mb-0">
+                Verifica que el cable se encuentra conectado de forma correcta a
+                la impresora por ambos extremos y que uno de los extremos se
+                encuentre conectado a la red, ya sea en una cajita o switch.
+              </p>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-ethernetpared.jpg"
+                    alt="Puerto de Ethernet Pared"                
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/1-PuertoSwitch.jpg"
+                    alt="Puerto Switch Ethernet"               
+                  />
+                </div>
+              </div>
+              <p>
+                Seguido de esto verifica que tu computadora tenga conexion a
+                internet, si no es asi, por favor revisa los pasos de la
+                pregunta número 1.
+              </p>
+              <p>
+                Si <strong>no te aparecen impresoras</strong> al momento de mandar imprimir:
+              </p>
+              <ol>
+                <li>Eliminar los archivos que aparezcan en la siguiente carpeta: <strong>C:\WINDOWS\system32\spool\PRINTERS</strong></li>
+                <li>Ir a servicios (Inicio -> Ejecutar -> Services.msc o en el panel de control -> herramientas administrativas -> servicios) e <strong>iniciar la cola de impresion</strong>.</li>
+                <li>Si te pide la contraseña de administrador de tu equipo favor de comunicarse a la Dirección de Informática.</li>
+                <li>¡Listo!, ya se deberían de ver todas las impresoras.</li>
+                <li>Opción con la línea de comandos:
+                  <ul>
+                    <li><i>net stop spooler</i></li>
+                    <li><i>del %systemroot%\System32\spool\printers\* /Q</i></li>
+                    <li><i>net start spooler</i></li>
+                  </ul>
+                </li>
+              </ol>
+              <p>
+                Si ya realizaste estos pasos y aun no funciona tu impresora por
+                favor realiza un Ticket a traves del SASIC para darte soporte.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help5"
+              aria-expanded="false"
+              aria-controls="help5"
+            >
+              <span class="circle">5</span>
+              <span class="mx-3 qt">¿Qué debo de revisar si mi teclado o mouse no funciona?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help5">
+            <div class="card card-body">
+              <p>
+                Si tu <strong>teclado o mouse deja de funcionar</strong> deberás de verificar que
+                tipo de conector tiene.
+              </p>
+              <ul>
+                <li>
+                  Si tu teclado o mouse utiliza un cable USB verifica que se
+                  encuentra conectado de forma correcta.
+                  <div class="row align-items-center justify-content-between text-center py-3">
+                    <div class="col-12 col-sm-6">
+                      <img
+                        class="img-fluid img-thumbnail"
+                        src="img/5-USBPC.png"
+                        alt="Puertos USB de la PC"                
+                      />
+                    </div>
+                    <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                      <img
+                        class="img-fluid img-thumbnail"
+                        src="img/5-cableusb.jpeg"
+                        alt=""               
+                      />
+                    </div>
+                  </div>
+                  <p>
+                    Si se encuentra conectado de forma correcta y aun así no funciona
+                    intenta cambiando a otro puerto USB en el equipo.
+                  </p>
+                </li>
+                <li>
+                  Si tu teclado o mouse tiene un conector circular revisa que
+                  esté conectado de forma correcta en el puerto del color
+                  correspondiente
+                </li>
+              </ul>
+              <div class="row align-items-center justify-content-between text-center py-3">
+                <div class="col-12 col-sm-6">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/5-puertops2.jpg"
+                    alt="Cable de Puerto PS2"                
+                  />
+                </div>
+                <div class="col-12 col-sm-6 mt-4 mt-sm-0">
+                  <img
+                    class="img-fluid img-thumbnail"
+                    src="img/5-ps2PC.jpg"
+                    alt="Puerto PS2 de la PC"               
+                  />
+                </div>
+              </div>
+              <p>
+                Si ya revisaste que se encuentran conectados de forma correcta,
+                reinicia tu equipo, ya que este tipo de componenentes solo
+                vuelven a funcionar una vez que reinicies el sistema.
+              </p>
+              <p>
+                Si ya realizaste estos pasos y tu equipo aun no funciona
+                correctamente genera un ticket en SASIC para recibir soported
+                de parte de la direccion de informática.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div id="scrollScanner" class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help6"
+              aria-expanded="false"
+              aria-controls="help6"
+            >
+              <span class="circle">6</span>
+              <span class="mx-3 qt">¿Problemas con el scanner?</span>
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help6">
+            <div class="card card-body">
+              <p>
+                Verificar la ruta de destino (dónde se guardará el documento
+                escaneado) si la falla es distinta, verificar que esté
+                correctamente conectada y encendida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help7"
+              aria-expanded="false"
+              aria-controls="help7"
+            >
+              <span class="circle">7</span>
+              <span class="mx-3 qt">¿Problemas con el software o programa?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help7">
+            <div class="card card-body">
+              <p>
+                Detallar el programa con el que se presenta el problema, así
+                como el tipo de sistema operativo instalado (Windows), con una
+                captura de pantalla adjunta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help8"
+              aria-expanded="false"
+              aria-controls="help8"
+            >
+              <span class="circle">8</span>
+              <span class="mx-3 qt"
+                >¿Qué hago si el enlace (encargado) al SASIC no se encuentra
+                para poder levantar un ticket?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help8">
+            <div class="card card-body">
+              <p>
+                Dirijirse a la computadora del compañero encargado, para
+                levantar el ticket detallando el problema en cuestión,
+                apoyándose de otro compañero o solicitando apoyo al Departamento
+                de Informática.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help9"
+              aria-expanded="false"
+              aria-controls="help9"
+            >
+              <span class="circle">9</span>
+              <span class="mx-3 qt">¿Qué hago si llego a perder el acceso al sistema?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help9">
+            <div class="card card-body">
+              <p>
+                Se tiene que solicitar el acceso directamente con el
+                Departamento de Informática.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help10"
+              aria-expanded="false"
+              aria-controls="help10"
+            >
+              <span class="circle">10</span>
+              <span class="mx-3 qt"
+                >¿Qué hago si mi computadora enciende pero no mi pantalla?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help10">
+            <div class="card card-body">
+              <p>
+                Checar que el cable VGA esté bien conectado de la computadora a
+                la pantalla.
+              </p>
+              <div class="text-center">
+                <img class="img-fluid img-thumbnail" src="img/vga.webp" alt="Cable VGA" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help13"
+              aria-expanded="false"
+              aria-controls="help13"
+            >
+              <span class="circle">11</span>
+              <span class="mx-3 qt"
+                >¿Qué hago si necesito compartir una carpeta con archivos
+                dentro?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help13">
+            <div class="card card-body">
+              <p>
+                Crear un Ticket solicitando el acceso a dicha carpeta
+                compartida.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help14"
+              aria-expanded="false"
+              aria-controls="help14"
+            >
+              <span class="circle">12</span>
+              <span class="mx-3 qt"
+                >¿Qué hago si no me contestan rápido mi solicitud?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help14">
+            <div class="card card-body">
+              <p>
+                Le pedimos sea paciente, ya que probablemente, se esté
+                atendiendo la problemática de otra persona.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help15"
+              aria-expanded="false"
+              aria-controls="help15"
+            >
+              <span class="circle">13</span>
+              <span class="mx-3 qt"
+                >¿Qué información debo proporcionar para hacer el
+                mantenimiento?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help15">
+            <div class="card card-body">
+              <p>
+                Para poder resolver el problema se debe proporcionar información
+                detallada el problema en cuestión, de ser posible a tráves de
+                una imágen o captura de pantalla adjunta.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="question mb-2">
+          <div class="d-grid gap-2 bg-white sticky-top">
+            <button
+              class="btn btn-outline-dark btn-lg d-flex align-items-center text-start"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#help17"
+              aria-expanded="false"
+              aria-controls="help17"
+            >
+              <span class="circle">14</span>
+              <span class="mx-3 qt"
+                >¿Y si me quedé con poco espacio en mi carpeta compartida?</span
+              >
+              <span class="fa fa-chevron-down ms-auto"></span>
+            </button>
+          </div>
+          <div class="collapse pt-1" id="help17">
+            <div class="card card-body">
+              <p>
+                Se debe crear un ticket solicitando ampliar el almaacenamiento
+                de la carpeta compartida adjuntando el área y para quién se
+                ampliará.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer class="footer">
+      <div class="container">
+          <p class="text-center mb-0">
+            <strong>IMPORTANTE:</strong> Si no lograste resolver tu problema
+            con tu equipo o tu problema no está en el listado, favor de
+            levantar un ticket en el sistema de tickets SASIC con la persona
+            encargada en tu área.
+          </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

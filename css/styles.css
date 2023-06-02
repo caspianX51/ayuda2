@@ -1,0 +1,75 @@
+:root {
+  --body-bg-color:    #f9f9f9;
+  --navbar-bg-color:  #6a1a21;
+  --color-brand:      #6f1d46;
+  --footer-bg-color:  #212529;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--body-bg-color);
+}
+.text-brand {
+  color: var(--color-brand);
+}
+.text-2xl {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+nav.navbar {
+  background-color: var(--navbar-bg-color);
+}
+nav.navbar a {
+  color: white;
+}
+nav.navbar a:hover {
+  color: #ffc800;
+}
+button.navbar-toggler {
+  border-color: white;
+}
+.container-main {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+.scrollarrowup {
+  position: fixed;
+  bottom: 2vh;
+  right: 2vw;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid white;
+  z-index: 1021;
+}
+.navbar a {
+  transition: transform 0.5s;
+}
+.qt {
+  line-height: 1.2;
+}
+.circle {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 80%;
+}
+footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--footer-bg-color);
+  padding: 20px;
+  color: #9b9d9e;
+  font-size: larger;
+  text-align: justify;
+}
